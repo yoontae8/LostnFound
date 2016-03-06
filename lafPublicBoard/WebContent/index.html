@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+<title>게시판 검색</title>
+</head>
+<body>
+	<h1 align="center"> 분실물 공공데이터 검색 서비스 센터</h1>
+	
+	<form name="searchForm" action="/lafPublicBoard/boardList.do" method="get" >
+	<p align="center">
+		분류: <select name="cate">
+			<option value="지갑" selected="selected">지갑</option>
+			<option value="쇼핑백">쇼핑백</option>
+			<option value="서류봉투">서류봉투</option>
+			<option value="가방">가방</option>
+			<option value="베낭">베낭</option>
+			<option value="핸드폰">핸드폰</option>
+			<option value="옷">옷</option>
+			<option value="책">책</option>
+			<option value="파일">파일</option>
+			<option value="기타">기타</option>
+		</select>
+		장소: <select name="pickPlace">
+			<option value="b1" selected="selected">버스</option>
+			<option value="b2">마을버스</option>
+			<option value="t1">법인택시</option>
+			<option value="t2">개인	택시</option>
+			<option value="s4">지하철(9호선)</option>
+		</select>
+		<input type=text name=searchText />
+		<input type="submit" value="검색" />
+	</p>
+	</form>
+</body>
+</html>
